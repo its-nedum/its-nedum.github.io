@@ -5,9 +5,7 @@ const mailer = () =>{
     const message = document.getElementById('message').value;
 
 Email.send({
-    Host : "smtp.gmail.com",
-    Username : "itsnedum",
-    Password : "2013224326Ec!",
+    SecureToken : " 87228b4b-3b54-490d-86ac-d61a76a7ae15",
     To : 'emesuechinedu@gmail.com',
     From : `${name} - ${email}`,
     Subject : "Hire Me Mail",
@@ -18,12 +16,3 @@ Email.send({
 
 }
 
-// Email.send({
-//     SecureToken : "3cd899bb-9b1d-4b92-a34a-b97d0bfc184f",
-//     To : 'emesuechinedu@gmail.com',
-//     From : `${name} - ${email}`,
-//     Subject : "Hire Me Mail",
-//     Body : `${message}`
-// }).then(
-//   message => alert(message)
-// );
