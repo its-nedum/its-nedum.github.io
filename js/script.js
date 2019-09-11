@@ -5,7 +5,7 @@ const mailer = () =>{
     const message = document.getElementById('message').value;
 
 Email.send({
-    SecureToken : " 87228b4b-3b54-490d-86ac-d61a76a7ae15",
+    SecureToken : "87228b4b-3b54-490d-86ac-d61a76a7ae15",
     To : 'emesuechinedu@gmail.com',
     From : `${name} - ${email}`,
     Subject : "Hire Me Mail",
