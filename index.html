@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Chinedu Emesue | Portfolio</title>
+	<title>Chinedu Emesue - Portfolio</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Chinedu Emesue Portfolio Website">
 	<meta name="keywords" content="Chinedu Emesue, Website Developer in Abuja, Hire a website developer, Software Developer Jobs, Chinedu Emesue Portfolio, Chinedu Emesue Resume, Chinedu Emesue Experience, Esmartcards developer, Angelacademy developer, NSJSC Website developer" />
 	<link rel="shortcut icon" href="favicon.png">
@@ -20,7 +19,8 @@
 
 	gtag('config', 'UA-144123839-5');
 	</script>
-
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="js/script.js"></script>
 	<script>
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -310,13 +310,13 @@
 						<div class="col-md-6 con-gd">
 							<div class="form-group">
 								<p>Send a Message *</p>
-								<textarea name="Message" class="form-control" placeholder="Enter Your Message" required=""></textarea>
+								<textarea id="message" class="form-control" placeholder="Enter Your Message" required=""></textarea>
 							</div>
 
 						</div>
 					</div>
 					<div class="form-group mb-0">
-						<button type="submit" class="btn btn-default">Submit</button>
+						<button type="submit" onclick="mailer()" class="btn btn-default">Submit</button>
 					</div>
 				</form>
 			</div>
@@ -344,6 +344,8 @@
 	<!-- move top -->
 
 </div>	
+
+
 
 </body>
 </html>
